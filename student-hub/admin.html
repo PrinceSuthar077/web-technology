@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StudentHub | Admin</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    
+    <header class="site-header">
+
+        <div class="container">
+
+            <a href="index.html" class="logo">
+                STUDENTHUB
+            </a>
+
+            <nav aria-label="Main Navigation">
+
+                <ul class="nav-list">
+
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+
+                    <li>
+                        <a href="events.html">Events</a>
+                    </li>
+
+                    <li>
+                        <a href="faq.html">FAQ</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+
+                    <li>
+                        <a href="admin.html" class="login-btn active">
+                            Admin
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    
+    <main>
+
+        
+        <section class="dashboard-header"
+                 aria-labelledby="admin-title">
+
+            <div class="container">
+
+                <p class="section-label">
+                    ADMINISTRATION
+                </p>
+
+                <h1 id="admin-title">
+                    Admin Dashboard
+                </h1>
+
+                <p>
+                    Manage students, events and StudentHub activities.
+                </p>
+
+            </div>
+
+        </section>
+
+
+       
+        <section class="admin-section">
+
+            <div class="container">
+
+
+                
+                <section aria-labelledby="admin-stats-title">
+
+                    <div class="section-heading">
+
+                        <p class="section-label">
+                            OVERVIEW
+                        </p>
+
+                        <h2 id="admin-stats-title">
+                            Portal Statistics
+                        </h2>
+
+                    </div>
+
+
+                    
+                    <div class="stats-grid">
+
+                        <article class="stat-card">
+
+                            <h3>
+                                250
+                            </h3>
+
+                            <p>
+                                Registered Students
+                            </p>
+
+                        </article>
+
+
+                        <article class="stat-card">
+
+                            <h3>
+                                18
+                            </h3>
+
+                            <p>
+                                Active Events
+                            </p>
+
+                        </article>
+
+
+                        <article class="stat-card">
+
+                            <h3>
+                                12
+                            </h3>
+
+                            <p>
+                                Pending Requests
+                            </p>
+
+                        </article>
+
+
+                        <article class="stat-card">
+
+                            <h3>
+                                36
+                            </h3>
+
+                            <p>
+                                New Feedback
+                            </p>
+
+                        </article>
+
+                    </div>
+
+                </section>
+
+
+                
+                <section aria-labelledby="admin-actions-title">
+
+                    <div class="section-heading">
+
+                        <p class="section-label">
+                            MANAGEMENT
+                        </p>
+
+                        <h2 id="admin-actions-title">
+                            Quick Actions
+                        </h2>
+
+                    </div>
+
+
+                    
+                    <div class="quick-actions">
+
+                        <a href="#students"
+                           class="btn primary-btn">
+                            Manage Students
+                        </a>
+
+                        <a href="#events"
+                           class="btn secondary-btn">
+                            Manage Events
+                        </a>
+
+                        <a href="#feedback"
+                           class="btn secondary-btn">
+                            View Feedback
+                        </a>
+
+                    </div>
+
+                </section>
+
+
+                
+                <section id="students"
+                         aria-labelledby="students-title">
+
+                    <div class="section-heading">
+
+                        <p class="section-label">
+                            STUDENTS
+                        </p>
+
+                        <h2 id="students-title">
+                            Recent Students
+                        </h2>
+
+                    </div>
+
+
+                    <div class="table-container">
+
+                        <table>
+
+                            <caption>
+                                Recently registered students
+                            </caption>
+
+                            <thead>
+
+                                <tr>
+
+                                    <th scope="col">
+                                        Student ID
+                                    </th>
+
+                                    <th scope="col">
+                                        Name
+                                    </th>
+
+                                    <th scope="col">
+                                        Course
+                                    </th>
+
+                                    <th scope="col">
+                                        Status
+                                    </th>
+
+                                    <th scope="col">
+                                        Action
+                                    </th>
+
+                                </tr>
+
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+
+                                    <td>
+                                        25AIM001
+                                    </td>
+
+                                    <td>
+                                        Rahul Patel
+                                    </td>
+
+                                    <td>
+                                        B.Tech AI & ML
+                                    </td>
+
+                                    <td>
+                                        Active
+                                    </td>
+
+                                    <td>
+                                        <a href="#students">
+                                            View
+                                        </a>
+                                    </td>
+
+                                </tr>
+
+
+                                <tr>
+
+                                    <td>
+                                        25AIM002
+                                    </td>
+
+                                    <td>
+                                        Priya Shah
+                                    </td>
+
+                                    <td>
+                                        B.Tech AI & ML
+                                    </td>
+
+                                    <td>
+                                        Active
+                                    </td>
+
+                                    <td>
+                                        <a href="#students">
+                                            View
+                                        </a>
+                                    </td>
+
+                                </tr>
+
+
+                                <tr>
+
+                                    <td>
+                                        25CSE015
+                                    </td>
+
+                                    <td>
+                                        Aarav Mehta
+                                    </td>
+
+                                    <td>
+                                        B.Tech CSE
+                                    </td>
+
+                                    <td>
+                                        Pending
+                                    </td>
+
+                                    <td>
+                                        <a href="#students">
+                                            View
+                                        </a>
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </section>
+
+
+                
+                <section id="events"
+                         aria-labelledby="events-title">
+
+                    <div class="section-heading">
+
+                        <p class="section-label">
+                            EVENTS
+                        </p>
+
+                        <h2 id="events-title">
+                            Event Management
+                        </h2>
+
+                    </div>
+
+
+                    
+                    <div class="event-grid">
+
+                        <article class="event-card">
+
+                            <div class="event-date">
+
+                                <strong>
+                                    15
+                                </strong>
+
+                                <span>
+                                    AUG
+                                </span>
+
+                            </div>
+
+
+                            <div class="event-details">
+
+                                <h3>
+                                    Web Development Workshop
+                                </h3>
+
+                                <p>
+                                    Registered participants:
+                                    45
+                                </p>
+
+                                <p>
+                                    Status: Active
+                                </p>
+
+                            </div>
+
+
+                            <a href="#events"
+                               class="text-link">
+                                Manage →
+                            </a>
+
+                        </article>
+
+
+                        <article class="event-card">
+
+                            <div class="event-date">
+
+                                <strong>
+                                    20
+                                </strong>
+
+                                <span>
+                                    AUG
+                                </span>
+
+                            </div>
+
+
+                            <div class="event-details">
+
+                                <h3>
+                                    AI & ML Seminar
+                                </h3>
+
+                                <p>
+                                    Registered participants:
+                                    68
+                                </p>
+
+                                <p>
+                                    Status: Active
+                                </p>
+
+                            </div>
+
+
+                            <a href="#events"
+                               class="text-link">
+                                Manage →
+                            </a>
+
+                        </article>
+
+                    </div>
+
+                </section>
+
+
+                
+                <section id="feedback"
+                         aria-labelledby="activity-title">
+
+                    <div class="section-heading">
+
+                        <p class="section-label">
+                            ACTIVITY
+                        </p>
+
+                        <h2 id="activity-title">
+                            Recent Activity
+                        </h2>
+
+                    </div>
+
+
+                    <div class="activity-list">
+
+                        <article class="activity-item">
+
+                            <div>
+
+                                <h3>
+                                    New Student Registration
+                                </h3>
+
+                                <p>
+                                    A new student registered on
+                                    StudentHub.
+                                </p>
+
+                            </div>
+
+                            <time datetime="2026-08-10">
+                                Today
+                            </time>
+
+                        </article>
+
+
+                        <article class="activity-item">
+
+                            <div>
+
+                                <h3>
+                                    New Event Created
+                                </h3>
+
+                                <p>
+                                    AI & ML Seminar was added to
+                                    the events list.
+                                </p>
+
+                            </div>
+
+                            <time datetime="2026-08-09">
+                                Yesterday
+                            </time>
+
+                        </article>
+
+
+                        <article class="activity-item">
+
+                            <div>
+
+                                <h3>
+                                    New Feedback Received
+                                </h3>
+
+                                <p>
+                                    A student submitted feedback
+                                    about StudentHub.
+                                </p>
+
+                            </div>
+
+                            <time datetime="2026-08-08">
+                                2 days ago
+                            </time>
+
+                        </article>
+
+                    </div>
+
+                </section>
+
+
+                
+                <section aria-label="Admin account actions">
+
+                    <div class="quick-actions">
+
+                        <a href="index.html"
+                           class="btn secondary-btn">
+                            Logout
+                        </a>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+   
+    <footer class="site-footer">
+
+        <div class="container footer-content">
+
+            <div>
+
+                <h2>
+                    STUDENTHUB
+                </h2>
+
+                <p>
+                    A centralized student portal for campus life,
+                    events and student services.
+                </p>
+
+            </div>
+
+
+            <nav aria-label="Footer Navigation">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="events.html">
+                            Events
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="faq.html">
+                            FAQ
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
+```
