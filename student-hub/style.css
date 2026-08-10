@@ -245,4 +245,47 @@ summary {
         width: 94%;
     }
 }
+.dark-mode {
+    background: #111;
+    color: white;
+}
 
+.dark-mode .site-header {
+    background: #222;
+}
+
+.dark-mode section,
+.dark-mode article,
+.dark-mode .about-info,
+.dark-mode .info-card,
+.dark-mode .feature-card {
+    background: #222;
+    color: white;
+}
+
+.dark-mode .nav-list a,
+.dark-mode .logo {
+    color: white;
+}
+
+.dark-mode .site-footer {
+    background: #000;
+}
+
+#darkModeBtn {
+    background: none;
+    border: none;
+    color: #222;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    padding: 0;
+}
+
+#darkModeBtn:hover {
+    text-decoration: underline;
+}
+
+.dark-mode #darkModeBtn {
+    color: white;
+}
