@@ -1,13 +1,20 @@
 document.addEventListener("DOMContentLoaded", function () {
 
     const button = document.getElementById("darkModeBtn");
+    const notification = document.getElementById("notification");
+    const closeNotification = document.getElementById("closeNotification");
 
     if (localStorage.getItem("darkMode") === "on") {
         document.body.classList.add("dark-mode");
+
+        if (button) {
+            button.textContent = "Light Mode";
+        }
     }
 
     if (button) {
         button.addEventListener("click", function () {
+
             document.body.classList.toggle("dark-mode");
 
             if (document.body.classList.contains("dark-mode")) {
@@ -17,6 +24,14 @@ document.addEventListener("DOMContentLoaded", function () {
                 localStorage.setItem("darkMode", "off");
                 button.textContent = "Dark Mode";
             }
+
         });
     }
+
+    if (closeNotification) {
+        closeNotification.addEventListener("click", function () {
+            notification.style.display = "none";
+        });
+    }
+
 });

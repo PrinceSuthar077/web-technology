@@ -12,7 +12,6 @@
 
 <body>
 
-    
     <header class="site-header">
 
         <div class="container">
@@ -43,11 +42,13 @@
 
     </header>
 
-
-   
     <main>
 
-        <!-- Dashboard Header -->
+        <div id="notification">
+            <span>Welcome to StudentHub! Check out the latest events and activities.</span>
+            <button id="closeNotification" type="button">×</button>
+        </div>
+
         <section class="dashboard-header" aria-labelledby="dashboard-title">
 
             <div class="container">
@@ -69,14 +70,10 @@
 
         </section>
 
-
-        
         <section class="dashboard-section">
 
             <div class="container dashboard-layout">
 
-
-                
                 <aside class="dashboard-sidebar"
                        aria-label="Dashboard Navigation">
 
@@ -128,12 +125,8 @@
 
                 </aside>
 
-
-                
                 <div class="dashboard-content">
 
-
-                    <!-- Student Information -->
                     <section class="welcome-card"
                              aria-labelledby="student-title">
 
@@ -161,8 +154,6 @@
 
                     </section>
 
-
-                    
                     <section aria-labelledby="statistics-title">
 
                         <div class="section-heading">
@@ -177,10 +168,7 @@
 
                         </div>
 
-
-                        
                         <div class="stats-grid">
-
 
                             <article class="stat-card">
 
@@ -192,7 +180,6 @@
 
                             </article>
 
-
                             <article class="stat-card">
 
                                 <h3>3</h3>
@@ -202,7 +189,6 @@
                                 </p>
 
                             </article>
-
 
                             <article class="stat-card">
 
@@ -214,7 +200,6 @@
 
                             </article>
 
-
                             <article class="stat-card">
 
                                 <h3>8</h3>
@@ -225,13 +210,10 @@
 
                             </article>
 
-
                         </div>
 
                     </section>
 
-
-                    
                     <section aria-labelledby="upcoming-title">
 
                         <div class="section-heading">
@@ -246,10 +228,7 @@
 
                         </div>
 
-
-                       
                         <div class="event-grid">
-
 
                             <article class="event-card">
 
@@ -260,7 +239,6 @@
                                     <span>AUG</span>
 
                                 </div>
-
 
                                 <div class="event-details">
 
@@ -287,7 +265,6 @@
 
                             </article>
 
-
                             <article class="event-card">
 
                                 <div class="event-date">
@@ -297,7 +274,6 @@
                                     <span>AUG</span>
 
                                 </div>
-
 
                                 <div class="event-details">
 
@@ -324,13 +300,10 @@
 
                             </article>
 
-
                         </div>
 
                     </section>
 
-
-                    
                     <section aria-labelledby="actions-title">
 
                         <div class="section-heading">
@@ -345,8 +318,6 @@
 
                         </div>
 
-
-                       
                         <div class="quick-actions">
 
                             <a href="events.html"
@@ -376,8 +347,6 @@
 
     </main>
 
-
-  
     <footer class="site-footer">
 
         <div class="container footer-content">
@@ -392,7 +361,6 @@
                 </p>
 
             </div>
-
 
             <nav aria-label="Footer Navigation">
 
@@ -427,10 +395,8 @@
         </div>
 
     </footer>
-<script src="script.js"></script>
-</body>
-</html>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
-
