@@ -249,6 +249,195 @@ summary {
     text-decoration: underline;
 }
 
+.form-section {
+    background: #f5f5f5;
+}
+
+.form-container {
+    max-width: 850px;
+}
+
+#registrationForm {
+    max-width: 850px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+#registrationForm > p {
+    margin-bottom: 25px;
+    color: #555;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 8px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label,
+.gender-fieldset > legend {
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.form-group input,
+.form-group select {
+    margin-bottom: 5px;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-check input:focus {
+    outline: 2px solid #222;
+    outline-offset: 2px;
+}
+
+.gender-fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.gender-group {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.gender-group label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.gender-group input {
+    width: auto;
+    margin: 0;
+}
+
+.error-message {
+    min-height: 20px;
+    display: block;
+    font-size: 13px;
+    color: #d00000;
+    margin-top: 3px;
+}
+
+.input-help {
+    font-size: 12px;
+    color: #666;
+    margin: 3px 0 5px;
+}
+
+.password-strength-container {
+    margin-top: 5px;
+}
+
+.password-strength-bar {
+    width: 100%;
+    height: 7px;
+    background: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.password-strength-bar::before {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 0;
+    transition: width 0.3s ease;
+}
+
+.password-strength-container span {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.form-group input.valid,
+.form-group select.valid {
+    border: 2px solid #168a16;
+}
+
+.form-group input.invalid,
+.form-group select.invalid {
+    border: 2px solid #d00000;
+}
+
+.form-check {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.form-check input {
+    width: auto;
+    margin: 0;
+}
+
+.form-check label {
+    cursor: pointer;
+}
+
+.form-check .error-message {
+    width: 100%;
+    margin-left: 25px;
+}
+
+.form-message {
+    min-height: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.form-message.success {
+    color: #168a16;
+}
+
+.form-message.error {
+    color: #d00000;
+}
+
+.primary-btn {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.form-footer {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.form-footer a {
+    color: #222;
+    font-weight: bold;
+}
+
 .dark-mode {
     background: #111;
     color: white;
@@ -308,7 +497,44 @@ summary {
     color: white;
 }
 
+.dark-mode .form-section {
+    background: #111;
+}
+
+.dark-mode #registrationForm {
+    background: #222;
+    border-color: #444;
+    color: white;
+}
+
+.dark-mode #registrationForm > p {
+    color: #ccc;
+}
+
+.dark-mode fieldset {
+    border-color: #555;
+}
+
+.dark-mode .input-help {
+    color: #bbb;
+}
+
+.dark-mode .form-footer a {
+    color: white;
+}
+
+.dark-mode .password-strength-bar {
+    background: #555;
+}
+
+.dark-mode .form-group input:focus,
+.dark-mode .form-group select:focus,
+.dark-mode .form-check input:focus {
+    outline-color: white;
+}
+
 @media (max-width: 700px) {
+
     .site-header .container {
         flex-direction: column;
         gap: 15px;
@@ -337,5 +563,19 @@ summary {
     #notification {
         width: 94%;
         font-size: 14px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #registrationForm {
+        padding: 20px;
+    }
+
+    .gender-group {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
     }
 }

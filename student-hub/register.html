@@ -1,346 +1,396 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>StudentHub | Register</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    
-    <header class="site-header">
-        <div class="container">
+<header class="site-header">
+    <div class="container">
 
-            <a href="index.html" class="logo">STUDENTHUB</a>
+        <a href="index.html" class="logo">STUDENTHUB</a>
 
-            <nav aria-label="Main Navigation">
-                <ul class="nav-list">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="events.html">Events</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="login.html" class="login-btn">Login</a></li>
-                    <li><button id="darkModeBtn">Dark Mode</button></li>
-                </ul>
-            </nav>
+        <nav aria-label="Main Navigation">
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html" class="login-btn">Login</a></li>
+                <li><button id="darkModeBtn" type="button">Dark Mode</button></li>
+            </ul>
+        </nav>
 
-        </div>
-    </header>
+    </div>
+</header>
 
+<main>
 
-   
-    <main>
+<section class="page-header" aria-labelledby="page-title">
 
-        
-        <section class="page-header" aria-labelledby="page-title">
-            <div class="container">
+    <div class="container">
 
-                <p class="section-label">JOIN STUDENTHUB</p>
+        <p class="section-label">JOIN STUDENTHUB</p>
 
-                <h1 id="page-title">
-                    Create Your Account
-                </h1>
+        <h1 id="page-title">Create Your Account</h1>
 
-                <p>
-                    Register as a student to access the StudentHub portal.
-                </p>
+        <p>Register as a student to access the StudentHub portal.</p>
 
-            </div>
-        </section>
+    </div>
 
+</section>
 
-       
-        <section class="form-section" aria-labelledby="register-title">
+<section class="form-section" aria-labelledby="register-title">
 
-            <div class="container form-container">
+    <div class="container form-container">
 
-                <form action="#" method="post">
+        <form id="registrationForm" novalidate>
 
-                    <h2 id="register-title">
-                        Student Registration
-                    </h2>
+            <h2 id="register-title">Student Registration</h2>
 
-                    <p>
-                        Please enter your details below.
-                    </p>
+            <p>Please enter your details below. All fields are required.</p>
 
+            <fieldset>
 
-                   
-                    <fieldset>
+                <legend>Personal Information</legend>
 
-                        <legend>Personal Information</legend>
+                <div class="form-grid">
 
-                        <div class="form-grid">
+                    <div class="form-group">
 
-                            <div class="form-group">
-                                <label for="full-name">
-                                    Full Name
-                                </label>
-
-                                <input
-                                    type="text"
-                                    id="full-name"
-                                    name="full_name"
-                                    placeholder="Enter your full name"
-                                    autocomplete="name"
-                                    required
-                                >
-                            </div>
-
-
-                            <div class="form-group">
-                                <label for="student-id">
-                                    Student ID
-                                </label>
-
-                                <input
-                                    type="text"
-                                    id="student-id"
-                                    name="student_id"
-                                    placeholder="Enter your student ID"
-                                    autocomplete="off"
-                                    required
-                                >
-                            </div>
-
-
-                            <div class="form-group">
-                                <label for="email">
-                                    Email Address
-                                </label>
-
-                                <input
-                                    type="email"
-                                    id="email"
-                                    name="email"
-                                    placeholder="Enter your email"
-                                    autocomplete="email"
-                                    required
-                                >
-                            </div>
-
-
-                            <div class="form-group">
-                                <label for="phone">
-                                    Phone Number
-                                </label>
-
-                                <input
-                                    type="tel"
-                                    id="phone"
-                                    name="phone"
-                                    placeholder="Enter your phone number"
-                                    autocomplete="tel"
-                                >
-                            </div>
-
-                        </div>
-
-                    </fieldset>
-
-
-                    
-                    <fieldset>
-
-                        <legend>Academic Information</legend>
-
-                        <div class="form-grid">
-
-                            <div class="form-group">
-
-                                <label for="course">
-                                    Course
-                                </label>
-
-                                <select id="course" name="course" required>
-
-                                    <option value="">
-                                        Select your course
-                                    </option>
-
-                                    <option value="btech-aiml">
-                                        B.Tech AI & ML
-                                    </option>
-
-                                    <option value="btech-cse">
-                                        B.Tech Computer Science
-                                    </option>
-
-                                    <option value="bca">
-                                        BCA
-                                    </option>
-
-                                    <option value="bba">
-                                        BBA
-                                    </option>
-
-                                </select>
-
-                            </div>
-
-
-                            <div class="form-group">
-
-                                <label for="semester">
-                                    Semester
-                                </label>
-
-                                <select id="semester" name="semester" required>
-
-                                    <option value="">
-                                        Select semester
-                                    </option>
-
-                                    <option value="1">Semester 1</option>
-                                    <option value="2">Semester 2</option>
-                                    <option value="3">Semester 3</option>
-                                    <option value="4">Semester 4</option>
-                                    <option value="5">Semester 5</option>
-                                    <option value="6">Semester 6</option>
-                                    <option value="7">Semester 7</option>
-                                    <option value="8">Semester 8</option>
-
-                                </select>
-
-                            </div>
-
-                        </div>
-
-                    </fieldset>
-
-
-                    
-                    <fieldset>
-
-                        <legend>Account Information</legend>
-
-                        <div class="form-grid">
-
-                            <div class="form-group">
-
-                                <label for="password">
-                                    Password
-                                </label>
-
-                                <input
-                                    type="password"
-                                    id="password"
-                                    name="password"
-                                    placeholder="Create a password"
-                                    autocomplete="new-password"
-                                    minlength="8"
-                                    required
-                                >
-
-                            </div>
-
-
-                            <div class="form-group">
-
-                                <label for="confirm-password">
-                                    Confirm Password
-                                </label>
-
-                                <input
-                                    type="password"
-                                    id="confirm-password"
-                                    name="confirm_password"
-                                    placeholder="Confirm your password"
-                                    autocomplete="new-password"
-                                    minlength="8"
-                                    required
-                                >
-
-                            </div>
-
-                        </div>
-
-                    </fieldset>
-
-
-                    
-                    <div class="form-check">
+                        <label for="full-name">Full Name</label>
 
                         <input
-                            type="checkbox"
-                            id="terms"
-                            name="terms"
+                            type="text"
+                            id="full-name"
+                            name="full_name"
+                            placeholder="Enter your full name"
+                            autocomplete="name"
                             required
+                            minlength="3"
+                            maxlength="50"
+                            pattern="[A-Za-z ]+"
+                            aria-describedby="nameError"
                         >
 
-                        <label for="terms">
-                            I agree to the StudentHub terms and conditions.
-                        </label>
+                        <span id="nameError" class="error-message" role="alert"></span>
 
                     </div>
 
+                    <div class="form-group">
 
-                    
-                    <button type="submit" class="btn primary-btn">
-                        Create Account
-                    </button>
+                        <label for="student-id">Student ID</label>
 
+                        <input
+                            type="text"
+                            id="student-id"
+                            name="student_id"
+                            placeholder="Enter your student ID"
+                            autocomplete="off"
+                            required
+                            minlength="4"
+                            maxlength="20"
+                            aria-describedby="studentIdError"
+                        >
 
-                   
-                    <p class="form-footer">
+                        <span id="studentIdError" class="error-message" role="alert"></span>
 
-                        Already have an account?
+                    </div>
 
-                        <a href="login.html">
-                            Login here
-                        </a>
+                    <div class="form-group">
 
-                    </p>
+                        <label for="email">Email Address</label>
 
-                </form>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="example@email.com"
+                            autocomplete="email"
+                            required
+                            aria-describedby="emailError"
+                        >
+
+                        <span id="emailError" class="error-message" role="alert"></span>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="phone">Mobile Number</label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="Enter 10-digit mobile number"
+                            autocomplete="tel"
+                            required
+                            inputmode="numeric"
+                            pattern="[6-9][0-9]{9}"
+                            maxlength="10"
+                            aria-describedby="phoneError"
+                        >
+
+                        <span id="phoneError" class="error-message" role="alert"></span>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <fieldset class="gender-fieldset">
+
+                            <legend>Gender</legend>
+
+                            <div
+                                class="gender-group"
+                                role="radiogroup"
+                                aria-describedby="genderError"
+                            >
+
+                                <label>
+                                    <input type="radio" name="gender" value="male">
+                                    Male
+                                </label>
+
+                                <label>
+                                    <input type="radio" name="gender" value="female">
+                                    Female
+                                </label>
+
+                                <label>
+                                    <input type="radio" name="gender" value="other">
+                                    Other
+                                </label>
+
+                            </div>
+
+                            <span id="genderError" class="error-message" role="alert"></span>
+
+                        </fieldset>
+
+                    </div>
+
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Academic Information</legend>
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+
+                        <label for="course">Course</label>
+
+                        <select
+                            id="course"
+                            name="course"
+                            required
+                            aria-describedby="courseError"
+                        >
+
+                            <option value="">Select your course</option>
+                            <option value="btech-aiml">B.Tech AI & ML</option>
+                            <option value="btech-cse">B.Tech Computer Science</option>
+                            <option value="bca">BCA</option>
+                            <option value="bba">BBA</option>
+
+                        </select>
+
+                        <span id="courseError" class="error-message" role="alert"></span>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="semester">Year / Semester</label>
+
+                        <select
+                            id="semester"
+                            name="semester"
+                            required
+                            aria-describedby="semesterError"
+                        >
+
+                            <option value="">Select semester</option>
+                            <option value="1">Semester 1</option>
+                            <option value="2">Semester 2</option>
+                            <option value="3">Semester 3</option>
+                            <option value="4">Semester 4</option>
+                            <option value="5">Semester 5</option>
+                            <option value="6">Semester 6</option>
+                            <option value="7">Semester 7</option>
+                            <option value="8">Semester 8</option>
+
+                        </select>
+
+                        <span id="semesterError" class="error-message" role="alert"></span>
+
+                    </div>
+
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Account Information</legend>
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+
+                        <label for="password">Password</label>
+
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Create a strong password"
+                            autocomplete="new-password"
+                            required
+                            minlength="8"
+                            aria-describedby="passwordHelp passwordError"
+                        >
+
+                        <small id="passwordHelp" class="input-help">
+                            Use at least 8 characters with uppercase,
+                            lowercase, number and special character.
+                        </small>
+
+                        <div class="password-strength-container" aria-live="polite">
+
+                            <div
+                                id="passwordStrengthBar"
+                                class="password-strength-bar">
+                            </div>
+
+                            <span id="passwordStrength">
+                                Password strength
+                            </span>
+
+                        </div>
+
+                        <span id="passwordError" class="error-message" role="alert"></span>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="confirm-password">Confirm Password</label>
+
+                        <input
+                            type="password"
+                            id="confirm-password"
+                            name="confirm_password"
+                            placeholder="Re-enter your password"
+                            autocomplete="new-password"
+                            required
+                            aria-describedby="confirmPasswordError"
+                        >
+
+                        <span
+                            id="confirmPasswordError"
+                            class="error-message"
+                            role="alert">
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </fieldset>
+
+            <div class="form-check">
+
+                <input
+                    type="checkbox"
+                    id="terms"
+                    name="terms"
+                    required
+                    aria-describedby="termsError"
+                >
+
+                <label for="terms">
+                    I agree to the StudentHub terms and conditions.
+                </label>
+
+                <span id="termsError" class="error-message" role="alert"></span>
 
             </div>
 
-        </section>
-
-    </main>
-
-
-    
-    <footer class="site-footer">
-
-        <div class="container footer-content">
-
-            <div>
-
-                <h2>STUDENTHUB</h2>
-
-                <p>
-                    A centralized student portal for campus life,
-                    events and student services.
-                </p>
-
+            <div
+                id="formMessage"
+                class="form-message"
+                role="alert"
+                aria-live="polite">
             </div>
 
+            <button type="submit" class="btn primary-btn">
+                Create Account
+            </button>
 
-            <nav aria-label="Footer Navigation">
+            <p class="form-footer">
 
-                <h3>Quick Links</h3>
+                Already have an account?
 
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="events.html">Events</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
+                <a href="login.html">Login here</a>
 
-            </nav>
+            </p>
+
+        </form>
+
+    </div>
+
+</section>
+
+</main>
+
+<footer class="site-footer">
+
+    <div class="container footer-content">
+
+        <div>
+
+            <h2>STUDENTHUB</h2>
+
+            <p>
+                A centralized student portal for campus life,
+                events and student services.
+            </p>
 
         </div>
 
-    </footer>
+        <nav aria-label="Footer Navigation">
+
+            <h3>Quick Links</h3>
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+
+</footer>
+
 <script src="script.js"></script>
+
 </body>
 </html>
-
