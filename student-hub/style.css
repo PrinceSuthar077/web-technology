@@ -1,3 +1,4 @@
+```css
 * {
     box-sizing: border-box;
     margin: 0;
@@ -438,6 +439,33 @@ legend {
     font-weight: bold;
 }
 
+#searchInput,
+#sortSelect {
+    max-width: 300px;
+    margin: 10px 10px 10px 0;
+}
+
+#pagination {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.page-btn {
+    width: auto;
+    margin: 5px;
+    padding: 8px 14px;
+}
+
+#loadingMessage {
+    text-align: center;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+#pagination .page-btn:hover {
+    text-decoration: underline;
+}
+
 .dark-mode {
     background: #111;
     color: white;
@@ -578,4 +606,11 @@ legend {
         align-items: flex-start;
         gap: 8px;
     }
+
+    #searchInput,
+    #sortSelect {
+        max-width: 100%;
+        margin-right: 0;
+    }
 }
+```

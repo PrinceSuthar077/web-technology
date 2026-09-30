@@ -1,0 +1,38 @@
+[
+{
+"id": 1,
+"title": "AI Workshop",
+"category": "Workshop",
+"date": "2026-10-05",
+"time": "10:00 AM",
+"venue": "Seminar Hall",
+"description": "A workshop on Artificial Intelligence and Machine Learning."
+},
+{
+"id": 2,
+"title": "Coding Competition",
+"category": "Competition",
+"date": "2026-10-15",
+"time": "09:00 AM",
+"venue": "Programming Lab",
+"description": "Test your programming and problem-solving skills."
+},
+{
+"id": 3,
+"title": "Tech Fest 2026",
+"category": "Festival",
+"date": "2026-10-20",
+"time": "10:00 AM",
+"venue": "University Ground",
+"description": "An exciting technical festival with multiple events."
+},
+{
+"id": 4,
+"title": "Python Seminar",
+"category": "Seminar",
+"date": "2026-10-25",
+"time": "02:00 PM",
+"venue": "Auditorium",
+"description": "Introduction to Python programming and its applications."
+}
+]
